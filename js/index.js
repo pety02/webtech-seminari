@@ -1,9 +1,8 @@
-const input = document.getElementById("input");
-const formButton = document.getElementById("todos-btn");
+let input = document.getElementById("input");
 
-formButton.addEventListener("click", function() {
+function getTODOS () {
     const todoLi = document.createElement("li");
-    todoLi.textContent = input.textContent;
-    input.textContent = "";
-    document.getElementById("todos").appendChild(todoLi);
-});
+    todoLi.textContent = input.value;
+    input.value = "";
+    document.getElementById("todos-list").appendChild(todoLi);
+}

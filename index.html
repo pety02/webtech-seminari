@@ -1,12 +1,12 @@
 <html>
     <head>
         <meta charset="UTF-8"/>
-        <script src="js/index.js"></script>
+        <script src="js/index.js" defer></script>
     </head>
     <body>
         <form>
             <input type="text" placeholder="Enter TODO..." id="input">
-            <button type="submit" id="todo-btn"></button>
+            <button type="button" id="todos-btn" onclick="getTODOS()">Send</button>
         </form>
         <div>
             <ul id="todos-list">
