@@ -6,6 +6,9 @@ btn.addEventListener("click", function  () {
     todoLi.textContent = input.value;
     input.value = "";
     document.querySelector('ul').appendChild(todoLi);
+    todoLi.addEventListener("click", function() {
+        document.querySelector('ul').removeChild(this);
+    });
 });
 
 
