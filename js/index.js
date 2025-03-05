@@ -1,15 +1,15 @@
-let input = document.getElementById("input");
-let btn = document.getElementById("todos-btn");
+let input = document.querySelector('input');
+let btn = document.querySelector('button');
 
 btn.addEventListener("click", function  () {
     const todoLi = document.createElement("li");
     todoLi.textContent = input.value;
     input.value = "";
-    document.getElementById("todos-list").appendChild(todoLi);
+    document.querySelector('ul').appendChild(todoLi);
 });
 
 
-const input2 = document.getElementById("input-countries");
+const input2 = document.querySelectorAll('input')[1];
 const countries = ["Bulgaria", "England", "USA", "Italy", "Norway"];
 input2.addEventListener("keyup", function() {
     if(input2.value.length >= 3) {
